@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.trgxmc.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+    </div>
+
+    <!-- Buttons: Using <a> tag to wrap the button -->
+    <div class="buttons-container">
+        <!-- Button 1: Wrapped in <a> tag with link -->
+        <a href="https://t.me/TRGxMC" class="btn-link">
+            <button class="btn" onclick="animateButton(this)">TELEGARM </button>
+        </a>
+        
+        <!-- Button 2: Wrapped in <a> tag with link -->
+        <a href="https://t.me/TRGxMC" class="btn-link">
+            <button class="btn" onclick="animateButton(this)">TELEGARM</button>
+        </a>
+        
+        <!-- Button 3: Wrapped in <a> tag with link -->
+        <a href="https://www.youtube.com/@trgxmc" class="btn-link">
+            <button class="btn" onclick="animateButton(this)">YouTube</button>
+        </a>
+    </div>
+
+    <!-- Footer with Name -->
+    <footer>
+        <p>www.trgxmc.com</p>
+    </footer>
+
+    <script>
+        function animateButton(button) {
+            button.classList.add("clicked");
+            setTimeout(() => {
+                button.classList.remove("clicked");
+            }, 300); // Animation duration (300ms)
+        }
+    </script>
+</body>
+</html>
+
