@@ -1,0 +1,64 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://cdn.pixabay.com/video/2024/02/06/199558-910609536_large.mp4') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+/* Search Bar */
+.search-container {
+    margin-top: 50px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Buttons Container */
+.buttons-container {
+    margin: 40px 0;
+}
+
+/* Button Style */
+.buttons-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons-container button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Animation on Button Click */
+.buttons-container button.clicked {
+    transform: scale(1.1); /* Scales up the button */
+    background-color: rgba(255, 255, 255, 0.8); /* Lightens background on click */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
